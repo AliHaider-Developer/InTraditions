@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px 10%;
+        background-color: rgba(0, 0, 0, 0.322);
+        backdrop-filter: blur(15px);
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        font-family: Poppins;
+        
+}
+
+
+nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+nav ul li {
+        padding: 2vw;
+        position: relative;
+        
+        
+    }
+    
+nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #dca854;
+        font-size: 1vw;
+        transition: 0.3s;
+        
+        
+        
+    }
+    
+nav ul li a:hover {
+        color: #006600;
+    }
+
+    
+    /* Dropdown menu */
+    .dropdown-menu {
+        display: none;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: rgba(0, 0, 0, 0.418);
+    }
+    
+nav ul li:hover .dropdown-menu {
+        display: block;
+    }
+    
+.dropdown-menu ul {
+        display: block;
+        margin: 10px;
+    }
+    
+.dropdown-menu ul li {
+        padding: 10px;
+    }
+
+    .first-btn{
+        margin-right: 200px;
+        height: 38px;
+        width: 88px;
+        font-family: Poppins;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+        color: #006600;
+        background-color: #ffffff;
+        transition: 0.5s;
+        font-weight: 500;
+        margin-left: 70px;
+        
+        
+    }
+    .first-btn:hover{
+        transform: scale(1.3);
+        color: #ffffff;
+        background-color: #006600;
+    }
+    
+    
+.two-btn {
+        font-size: 18px;
+        font-weight: bold;
+        color: #006600;
+        border-radius: 5px;
+        border: none;
+        background-color: #ffffff;
+        padding: 8px 12px;
+        transition: 0.5s;
+    }
+.hero-text, .two-btn{
+        margin-top: 2%;
+    }
+     
+.two-btn:hover {
+        color: #ffffff;
+        transform: scale(1.2);
+        background-color: #006600;
+    }
+    
+    /* Logo styles */
+.logo {
+        transition: 0.5s;
+        
+    }
+    
+.logo:hover {
+        transform: scale(1.3);
+    } 
+      
+
+.ranikot {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.345),rgba(0,0,0,0.2)), url(assets/cover-image-1-29.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;      
+}
+
+.ranikot section{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 40px;
+    justify-content: center;
+    text-shadow: 2px 2px #0000008e;
+    color: white;
+    text-indent:50px ;
+    line-height: 1.3;
+     
+}
+.ranikot section p{
+    font-family:Poppins ;
+
+}
+    
+
+span{
+   color: green;
+}
+h1{
+    font-size: 100px;
+}
+.p1{
+    font-size: 70px;
+}
+.sub-hero{
+    height: 60vh;
+    margin-top: 20vh;
+    display: flex;
+    column-gap: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.pottery img{
+    border-radius: 10px;
+    width: 50vw;
+    height: 50vh;
+    
+    
+}
+h2{
+    font-size: 2.5vw;
+    font-family:Merriweather ;
+
+}
+.paragraph2{
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: justify;
+}
+.sara-content2 {
+    margin-top: 10vh;
+    text-align: center;
+    
+    
+}
+.sara-content2 h3{
+    
+    font-size: 2.5vw;
+    font-family:Poppins ;
+}
+.sara-content2 p{
+    padding-bottom: 10vh;
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: Poppins;
+}
+.Ajrak{
+    display: flex;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+    column-gap: 7%;
+    
+}
+.photo img{
+    height: 50vh;
+    width: 40vw;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.5s;
+    
+    
+    
+}
+.photo img:hover{
+   transform: scale(1.1);
+   
+}
+.Ajrak h4{
+    margin-top: 30px;
+    font-family: Poppins;
+    font-size: 45px;
+    color: rgba(0, 0, 255, 0.877);
+}
+.Ajrak .one span{
+    color: darkred;
+}
+.Ajrak p{
+    font-size: 1.1vw;
+    text-align: justify;
+    font-family: Poppins;
+}
+.Ajrak h4 span{
+    color: darkred;
+}
+.sara-content3{
+    margin-top: 8%;
+    display: flex;
+    padding-left: 55px;
+    padding-right: 55px;
+    column-gap: 7%;
+    
+}
+.topi h5{
+    margin-top: 50px;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 2vw;
+    color: darkred;
+    
+}
+.topi h5 span{
+    color: darkorange;
+}
+.topi p{
+    font-size: 1.1vw;
+    font-family: Poppins;
+    text-align: justify;
+    
+    
+}
+.photo2 img{
+    width: 45vw;
+    height: 45vh;
+    border-radius: 15px;
+    transition: 0.5s;
+    
+    
+}
+.photo2 img:hover{
+    transform: scale(1.1);
+
+}
+.sara-content4{
+    display: flex;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 8%;
+    column-gap: 7%;
+}
+.sara-content4 h6{
+    margin-top: 35px;
+    font-size: 2.4vw;
+    font-family: Poppins;
+    color: rgb(105, 28, 18);
+    
+}
+.sara-content4 span{
+    color: rgb(158, 10, 55);
+    font-size:2vw ;
+}
+.sara-content4 p{
+    font-size: 1.1vw;
+    font-family: Poppins;
+    text-align: justify;
+
+}
+.sara-content5{
+    display: flex;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 8%;
+    column-gap: 7%;
+}
+.sara-content5 .choli{
+    margin-top: 70px;
+    font-size: 2vw;
+    font-family: Poppins;
+    font-weight: bold;
+    color: chocolate;
+}
+.sara-content5 .choli span{
+    color: crimson;
+
+}
+.sara-content5 p{
+    font-size: 1.1vw;
+    font-family: Poppins;
+    text-align: justify;
+
+}
+
+.sara-contentnew {
+    margin-top: 18vh;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    
+    
+}
+.sara-contentnew h3{
+    
+    font-size: 2.5vw;
+    font-family:Poppins ;
+}
+.sara-contentnew p{
+    padding-bottom: 10vh;
+    font-size: 1.1vw;
+    font-weight: 500;
+    font-family: Poppins;
+}
+.sara-contentnew .one{
+    color: gold;
+}
+.sara-contentnew span{
+    color: #E0115F;
+}
+.newdesign{
+    display: flex;
+    background-color: #dca854;
+    font-family: Poppins;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.newdesign .necklace{
+    border: solid black 5px;
+    border-radius: 25px 60px;
+    box-shadow: 25px 25px 25px;
+}
+.newdesign .necklace img{
+    
+    height: 70vh;
+    width: 50vw;
+    border-radius: 25px 60px;
+    
+    
+}
