@@ -23,7 +23,7 @@ body {
 
 /* Hero section styles */
 .hero {
-    background-image: url('assets/hassan-wasim-4wutln9_8OM-unsplash.jpg');
+    background-image: url('asserts/hassan-wasim-4wutln9_8OM-unsplash (1).webp');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -729,35 +729,3 @@ margin-bottom: -59px;
 position: relative;
 overflow: hidden; 
 }
-
-
-/* Responsive adjustments for smaller screens */
-/* @media (max-width: 1200px) {
-    .hero-text {
-        font-size: 2vw;
-    }
-}
-
-@media (max-width: 992px) {
-    .hero-text {
-        font-size: 1.8vw;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-text {
-        font-size: 1.5vw;
-    }
-    .hero {
-        height: 80vh;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-text {
-        font-size: 1.2vw;
-    }
-    .hero {
-        height: 70vh;
-    }
-} */ 

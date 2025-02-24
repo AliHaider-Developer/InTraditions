@@ -165,16 +165,21 @@ h1{
     margin-top: 20vh;
     display: flex;
     column-gap: 70px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
     
 }
 .pottery img{
     border-radius: 10px;
     width: 50vw;
     height: 50vh;
+    box-shadow: 15px 15px 15px;
+    transition: .5s;
     
     
+}
+.pottery img:hover{
+    transform: scale(1.1);
 }
 h2{
     font-size: 2.5vw;
@@ -217,6 +222,7 @@ h2{
     overflow: hidden;
     border-radius: 15px;
     transition: 0.5s;
+    box-shadow: 15px 15px 15px;
     
     
     
@@ -273,6 +279,7 @@ h2{
     height: 45vh;
     border-radius: 15px;
     transition: 0.5s;
+    box-shadow: 15px 15px 15px;
     
     
 }
@@ -356,22 +363,196 @@ h2{
     color: #E0115F;
 }
 .newdesign{
+    padding-top: 30px;
     display: flex;
     background-color: #dca854;
     font-family: Poppins;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    column-gap: 60px;
 }
 .newdesign .necklace{
-    border: solid black 5px;
-    border-radius: 25px 60px;
-    box-shadow: 25px 25px 25px;
+    border: solid black 1px;
+    border-radius: 25px 25px;
+    box-shadow: 15px 15px 15px;
+    transition: .5s;
+}
+.newdesign .necklace:hover{
+    transform: scale(105%);
 }
 .newdesign .necklace img{
     
-    height: 70vh;
-    width: 50vw;
-    border-radius: 25px 60px;
+        height: 60vh;
+    width: 40vw;
+    border-radius: 25px 25px;
     
+
+}
+
+
+.newdesignforyou .sentence1{
+    font-size: 50;
+}
+.newdesignforyou p {
+    font-size: 19px;
+    text-align: justify;
+}
+
+
+/* ------------------------------------------------------------------------------footer-----------------------------------------------------------------------------*/
+/* Footer Base */
+
+footer {
+    background-color: #333b41;
+    ;
+    padding: 40px 5%;
+    color: #D3D3D3;
+    font-family: Poppins, sans-serif;
+}
+
+/* Footer Main Container */
+.main-fot-container {
+    display: flex;
+    justify-content: space-between;  /* Equal spacing */
+    align-items: flex-start;         /* Align to the top */
+    gap: 5vw;                        /* Adjusts spacing between sections */
+    padding: 20px 5%;                /* Adds some padding */
+    flex-wrap: nowrap;   
+    margin-top: 5%;             /* Prevents wrapping */
+}
+
+
+/* Logo Section */
+.first-fot-container {
+    width: 30%;
+    margin-top: 10px;
+}
+.first-fot-container .logo {
+    width: 25vh;
+    height: auto;
+}
+.footer-text-one {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 20px;
+  
     
 }
+
+/* Contact Section */
+.second-fot-container {
+    width: 30%;
+    text-align: left;
+}
+
+.second-fot-container h5 {
+    color: #006600;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.second-fot-container h5:hover {
+    border-bottom: 3px solid #006600;
+    color: white;
+}
+
+/* Contact Items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.first-fot-container,
+.second-fot-container,
+.third-fot-container {
+    width: 30%; /* Ensures equal width */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.second-fot-container{
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    margin-top: 4%;
+    
+}
+.third-fot-container{
+    margin-top: 10%;
+} 
+
+/* Contact Icon Background */
+.fot-icon {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/* Icon Images */
+.fot-icon img {
+    width: 35px;
+    height: 35px;
+    transition: 0.3s ease;
+    padding: 0;
+}
+
+
+.fot-icon:hover img {
+    transform: scale(1.3);
+}
+
+/* Footer Navigation */
+.third-fot-container {
+    width: 20%;
+    text-align: left;
+    pointer-events: fill;
+}
+
+.third-fot-container ul {
+    padding: 0;
+}
+
+.third-fot-container ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.third-fot-container ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #dca854;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.third-fot-container ul li a:hover {
+    color: #006600;
+}
+.third-fot-container a {
+    position: relative;
+    z-index: 10;
+}
+/* Footer Decorative Image */
+.footer-decor {
+    width: 600px;
+    height: auto;
+
+margin-top: 50px;
+margin-right: -180px;
+margin-left: -600px;
+margin-bottom: -59px;
+position: relative;
+overflow: hidden; 
+}
+
