@@ -415,7 +415,7 @@ button:hover {
     background-color: #028302;
   padding-bottom: 6%;
   transition-duration: 0.3s;
-    
+position: relative;    
 }
 .card:hover{
     transform: scale(1.1);
