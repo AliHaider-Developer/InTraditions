@@ -78,16 +78,18 @@ body {
 
 /* Navbar styles */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
+    
+    
     padding: 3px 10%;
     background-color: rgba(0, 0, 0, 0.322);
     
     backdrop-filter: blur(15px);
     position: fixed;
-    width: 100%;
+   
     z-index: 1000;
+
+    width: 100%;display: flex; flex-direction: row; align-items: center; justify-content: space-around;padding-top: 15px;padding-bottom: 15px;
 }
 
 nav ul {
@@ -134,7 +136,7 @@ nav ul li:hover .dropdown-menu {
 }
 
 .dropdown-menu ul li {
-    padding: 10px;
+    padding: 10px 30px;
 }
 
 /* Button styles */
@@ -147,6 +149,8 @@ button {
     background-color: #ffffff;
     padding: 8px 12px;
     transition: 0.5s;
+    width: auto;
+    height: auto;
     
 }
 .hero-text button{
@@ -282,13 +286,15 @@ button:hover {
   }
   
   .mid-section-text-right {
-    margin-right: 10vw;
-    margin-top: 20vw;
+    margin-right: 16vh;
+    margin-right: 15vh;
+    padding-top: 40vh;
   }
   
   .mid-section-text-right h2 {
     font-family: Merriweather;
     font-size: 2vw;
+    margin-left: -5vh;
   }
   
   .mid-section-text-right p {
@@ -296,7 +302,8 @@ button:hover {
     font-family: Poppins;
     font-size: 17px;
     text-align: justify;
-    margin-right: 1vw;
+    margin-left: -5vh;
+    
   }
   
   .pakistani-culture {
@@ -326,20 +333,22 @@ button:hover {
 
 }
 .mid-section-text-left-2{
-    margin-left: 15vw;
-    margin-top: 20vw;
+    margin-left: 25vh;
+    padding-top: 40vh;
     
 
 }
 .mid-section-text-left-2 h2{
     font-family: Merriweather;
-    font-size: 2vw;
+    font-size: 4vh;
+    margin-left: 5vh;
 }
 .mid-section-text-left-2 p{
     margin-top: 10px;
     font-family: Poppins;
     font-size: 17px;
     text-align: justify;
+    margin-left: 5vh;
     
 }
 
@@ -354,22 +363,72 @@ button:hover {
 }
 
 
+/*---------------------------------------------------------- fourth image with text--------------------------------------------- */
+/*---------------------------------------------------------- mid-section-text-right-2------------------------------------------ */
+
+
+.mid-section-right-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+  }
+  
+  .mid-section-text-right-2 {
+    margin-right: 19vh;
+
+    padding-top: 40vh;
+  }
+  
+  .mid-section-text-right-2 h2 {
+    font-family: Merriweather;
+    font-size: 2vw;
+    margin-left: -6vh;
+  }
+  
+  .mid-section-text-right-2 p {
+    margin-top: 2%;
+    font-family: Poppins;
+    font-size: 17px;
+    text-align: justify;
+    margin-left: -6vh;
+    
+  }
+  
+  .pakistani-culture {
+    color: #006600;
+  }
+  .mid-section-right-2 img{
+    width: 100%;
+    height: auto;
+   transition-duration: 0.3s;
+}
+.mid-section-right-2 img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
 
 /*CARDS SECTION*/
 
 .cards-section {
-    background-color: #006600;
+    background-color: #028302;
   padding-bottom: 6%;
+  transition-duration: 0.3s;
     
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .cards-section p{
     text-align: justify;
     font-weight: 400;
+    
 }
 .cards-section h3{
     padding-top: 10%;
     margin-top: 3%;
-    padding-bottom: 7%;
+    
     margin-left: 10%;
     
     font-family: Merriweather;
@@ -398,6 +457,11 @@ border-bottom: 2px solid transparent;
     margin-top: 5%;
     margin-bottom: 5%;
     font-family: Poppins;
+    line-height: 1.6;
+
+}
+.container p{
+    margin-bottom: 15%;
 }
 .card {
     overflow: hidden;
@@ -437,6 +501,7 @@ border-bottom: 2px solid transparent;
   #slideshow-two {
     overflow: hidden;
     width: 100%;
+    height: auto;
     position: relative;
   
 }
@@ -445,8 +510,8 @@ border-bottom: 2px solid transparent;
     display: flex;
     width: calc(400px * 10); /* Double width to hold duplicate slides */
     animation: slide-two 15s linear infinite;
-   margin-bottom: 2%;
-   
+   padding-bottom: 5%;
+   padding-top: 5%;
     gap: 1%;
 }
 
@@ -481,7 +546,7 @@ border-bottom: 2px solid transparent;
 .cards-section-3 h3{
     padding-top: 10%;
     margin-top: 3%;
-    padding-bottom: 5%;
+
     margin-left: 10%;
     
     font-family: Merriweather;
@@ -498,7 +563,7 @@ margin-top: 5%;
 margin-bottom: 5%;
 font-family: Poppins;
 font-size: 25px;
-
+align-items: baseline;
 border-bottom: 2px solid transparent;
 
 }
@@ -510,6 +575,7 @@ border-bottom: 2px solid transparent;
     margin-top: 5%;
     margin-bottom: 5%;
     font-family: Poppins;
+    line-height: 1.6; 
 }
 .card-three {
     overflow: hidden;
@@ -524,6 +590,7 @@ border-bottom: 2px solid transparent;
     background: #A67C52;
     color: #FFFFFF;
     cursor:pointer;
+    transform: scale(1.1);
     
   }
 
@@ -557,7 +624,8 @@ border-bottom: 2px solid transparent;
     display: flex;
     width: calc(400px * 10); /* Double width to hold duplicate slides */
     animation: slide-three 15s linear infinite;
-   padding-bottom: 3%;
+   padding-bottom: 5%;
+   padding-top: 5%;
     gap: 1%;
 }
 
@@ -681,6 +749,9 @@ footer {
     padding: 0;
 }
 
+.contact-item p{
+    letter-spacing: 1;
+}
 
 .fot-icon:hover img {
     transform: scale(1.3);
