@@ -137,6 +137,7 @@ nav ul li:hover .dropdown-menu {
 
 .dropdown-menu ul li {
     padding: 10px 30px;
+    
 }
 
 /* Button styles */
@@ -150,6 +151,7 @@ button {
     padding: 8px 12px;
     transition: 0.5s;
     width: auto;
+    font-family: Poppins;
     height: auto;
     
 }

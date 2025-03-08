@@ -6,7 +6,7 @@ naav bar
         class="logo"
         src="assets/Artboard 1.svg"
         alt="LOGO"
-        style="width: 14vw; height: 14vw; margin-left: -5%;"
+        style="width: 14VH; height: 14VH; margin-left: -5%;"
       /></a>
      
       <ul>
@@ -52,7 +52,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 2vw;
+    padding: 2VH;
     position: relative;
 }
 
@@ -60,7 +60,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     color: #dca854;
-    font-size: 1vw;
+    font-size: 1VH;
     transition: 0.3s;
 }
 
