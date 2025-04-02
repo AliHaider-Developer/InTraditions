@@ -17,7 +17,8 @@ body {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
-    
+        margin: 0 auto;
+
     font-family: "Montserrat", serif;
     margin: 0;
     font-family: "Figtree", sans-serif;
@@ -131,16 +132,16 @@ button:hover {
 
 
 
-.ranikot {
+.punjabi-culture {
     background-image:linear-gradient(rgba(0, 0, 0, 0.345),rgba(0,0,0,0.2)), url(/sindhi1/assets/cover-image-1-29.jpg);
     height: 100vh;
     width: 100%;
     background-size: 100% 100%;      
 }
-.ranikot button{
+.punjabi-culture button{
     margin-top: 50px;
 }
-.ranikot section{
+.punjabi-culture section{
     text-align: center;
     padding-top: 15%;
     font-size: 40px;
@@ -151,13 +152,13 @@ button:hover {
     line-height: 1.3;
      
 }
-.ranikot section .p1{
+.punjabi-culture section .p1{
     font-family:Poppins;
     font-size: 50px;
     font-weight:600 ;
 
 }
-.ranikot section .subline{
+.punjabi-culture section .subline{
     font-size: 35px;
     margin-top: 10px;
     font-weight: 500;
@@ -258,7 +259,7 @@ padding-bottom: 0px;
     font-weight: 500;
     font-family: Poppins;
 }
-.Ajrak{
+.lunghi{
     display: flex;
     padding-left: 5%;
     padding-right: 5%;
@@ -267,7 +268,7 @@ padding-bottom: 0px;
     
 }
 /* ------------------------------------------------------------END sara content2 section------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------START OF ajrak section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------START OF lunghi section------------------------------------------------------------------------------- */
 .photo img{
     border-radius: 10px;
     width: 600px;
@@ -281,16 +282,16 @@ padding-bottom: 0px;
    transform: scale(1.05);
    
 }
-.Ajrak h4{
+.lunghi h4{
     margin-top: 3%;
     font-family: Merriweather;
     font-size: 45px;
     color: rgba(0, 0, 255, 0.877);
 }
-.Ajrak .one span{
+.lunghi .one span{
     color: darkred;
 }
-.Ajrak p{
+.lunghi p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -298,17 +299,17 @@ padding-bottom: 0px;
     word-spacing: 1.5;
     padding: 3px 30px 0px 0px;
 }
-.Ajrak .text-content{
+.lunghi .text-content{
     padding-top: 3%;
 }
-.Ajrak h4 span{
+.lunghi h4 span{
     color: darkred;
 }
-.Ajrak h4::first-letter{
+.lunghi h4::first-letter{
     color: darkred;
 }
-/* ------------------------------------------------------------END of ajrak section section------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------START OF topi section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------END of lunghi section section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------START OF punjabi-kurta section------------------------------------------------------------------------------- */
 .sara-content3{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -319,21 +320,21 @@ padding-bottom: 0px;
     column-gap: 5%;
     
 }
-.topi{
+.punjabi-kurta{
     padding-top: 4%;
     padding-left: 2%;
 }
-.topi h5{
+.punjabi-kurta h5{
     margin-top: 3%;
     font-family: Merriweather;
     font-size: 45px;
     color: rgba(0, 0, 255, 0.877);
     
 }
-.topi h5 span{
+.punjabi-kurta h5 span{
     color: darkorange;
 }
-.topi p{
+.punjabi-kurta p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -356,9 +357,9 @@ padding-bottom: 0px;
     transform: scale(1.05);
 
 }
-/* ------------------------------------------------------------END of topi section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------END of punjabi-kurta section------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------START OF KHUSSA section------------------------------------------------------------------------------- */
-.sara-content4 img{
+.punjabi-khussa img{
     width: 700px;
     transition: .3s;
     height: auto;
@@ -366,18 +367,18 @@ padding-bottom: 0px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
-.sara-content4 img:hover{
+.punjabi-khussa img:hover{
     transform: scale(1.05);
 
 }
-.sara-content4{
+.punjabi-khussa{
     display: flex;
     padding-left: 55px;
     padding-right: 55px;
     margin-top: 8%;
     column-gap: 1%;
 }
-.sara-content4 h6{
+.punjabi-khussa h6{
     margin-top: 9%;
     font-family: Merriweather;
     font-size: 45px;
@@ -386,11 +387,11 @@ padding-bottom: 0px;
     color: rgb(105, 53, 18);
     
 }
-.sara-content4 span{
+.punjabi-khussa span{
     color: rgb(158, 124, 10);
     font-size:2vw ;
 }
-.sara-content4 p{
+.punjabi-khussa p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -402,7 +403,7 @@ padding-bottom: 0px;
 /* ------------------------------------------------------------END of khussa section------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------START OF choli section------------------------------------------------------------------------------- */
 
-.sara-content5{
+.shalwar-kameez{
     display: flex;
     padding-left: 55px;
     padding-right: 55px;
@@ -410,7 +411,7 @@ padding-bottom: 0px;
     margin-bottom: 15%;
     column-gap: 2%;
 }
-.sara-content5 .choli{
+.shalwar-kameez .choli{
     margin-top: 5%;
     font-family: Merriweather;
     font-size: 45px;
@@ -418,11 +419,11 @@ padding-bottom: 0px;
     font-weight: bold;
     color: chocolate;
 }
-.sara-content5 .choli span{
+.shalwar-kameez .choli span{
     color: crimson;
 
 }
-.sara-content5 p{
+.shalwar-kameez p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -431,7 +432,7 @@ padding-bottom: 0px;
     padding: 5px 60px;
 
 }
-.sara-content5 img{
+.shalwar-kameez img{
     width: 600px;
     transition: .3s;
     height: auto;
@@ -440,7 +441,7 @@ padding-bottom: 0px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 
 }
-.sara-content5 img:hover{
+.shalwar-kameez img:hover{
     transform: scale(1.05);
 
 }
@@ -448,6 +449,8 @@ padding-bottom: 0px;
 /* ----------------------------------------------cards section---------------------------------------------------------------------------- */
 .culture-places{
     background-color: #EDE0D4;
+   
+  
 }
 article {
     --img-scale: 1.001;
@@ -500,7 +503,7 @@ article {
   }
   
   .article-body {
-    padding: 30px;
+    padding: 25px;
   }
   
   article  {
@@ -509,6 +512,7 @@ article {
     text-decoration: none;
     color: #28666e;
   }
+  
   
   article a:focus {
     outline: 1px dotted #28666e;
@@ -557,7 +561,9 @@ article {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 36px;
   }
-  
+  .article-body p{
+    text-align: justify;
+  }
   @media screen and (max-width: 960px) {
     article {
       container: card/inline-size;
@@ -605,7 +611,7 @@ article {
 
 .food-section {
     background: linear-gradient(to right, #A67C52, #8C6239); /* Warm historical colors */
-    padding: 60px;
+padding-bottom: 5%;
     text-align: center;
 }
 
@@ -639,6 +645,7 @@ article {
 .food-card:hover {
 transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    
 }
 
 .food-card h3 {
@@ -652,6 +659,7 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     font-size: 16px;
     color: #444;
     line-height: 1.5;
+    font-family: Poppins;
 }
 
 .food-image {
@@ -665,69 +673,93 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     transform: scale(1.08);
 }
 
-
-
-
-/* ----------------------------------------------end of food cards section---------------------------------------------------------------------------- */
-/* ----------------------------------------------cards section---------------------------------------------------------------------------- */
- /* .handcrafted-jewelry {
-    text-align: center;
-    background: #f9f9f9;
-    padding: 50px;
+/* ------------------------------------------end of food cards--------------------------------------------------------------- */
+.main-sport-contaniner{
+padding: 5%;
+background-color: #aaaaaa;
 }
-
-.handcrafted-jewelry h2 {
-    font-size: 28px;
-    color: #d42a2a;
-    margin-bottom: 10px;
+.main-sport-contaniner h5{
+    margin-bottom: 5%;
+padding-top: 5%;
+    font-size: 50px;
+    font-family: Merriweather;
 }
-
-.jewelry-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+.sport-content h2{
+    font-family: Poppins;
+    font-size: 40px;
+    padding-bottom: 5%;
 }
-
-.jewelry-item {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.sport-content strong{
+    font-family: Poppins;
 }
-
-.jewelry-item img {
-    width: 100%;
-    height: auto;
+.sport-section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+justify-content: center;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    width: 70%;
 }
+.sport-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 
-.jewelry-item h3 {
-    margin-top: 10px;
-    font-size: 20px;
+}
+.sport-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.sport-section:hover .sport-image {
+    transform: rotate(3deg);
+}
+.sport-content {
+    flex: 1;
+}
+.sport-title {
     color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
 }
-
-.read-more {
-    background: #d42a2a;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
+.sport-section:hover .sport-title {
+    color: #007bff;
 }
-
-.read-more:hover {
-    background: #b52121;
-} */
-
-
-
-
-
+p {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    font-family: Poppins;
+}
+.sport-section:hover p {
+    opacity: 1;
+}
+/* Subtle fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sport-section {
+    animation: fadeIn 0.5s ease-out;
+    animation-fill-mode: backwards;
+}
+.sport-section:nth-child(1) { animation-delay: 0.1s; }
+.sport-section:nth-child(2) { animation-delay: 0.2s; }
+.sport-section:nth-child(3) { animation-delay: 0.3s; }
+.sport-section:nth-child(4) { animation-delay: 0.4s; }
+.sport-section:nth-child(5) { animation-delay: 0.5s; }
 
 
 
@@ -897,6 +929,11 @@ footer {
 .third-fot-container a {
     position: relative;
     z-index: 10;
+}
+.LinkdIn{
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
 }
 /* Footer Decorative Image */
 .footer-decor {
