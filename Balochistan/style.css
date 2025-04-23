@@ -131,17 +131,18 @@ button:hover {
 
 
 
-.punjabi-culture {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.345),rgba(0,0,0,0.2)), url(/punjab/assets/vecteezy_tractor-working-in-field-agriculture_19927356-min.jpg);
+.balochi-culture {
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.345),rgba(0,0,0,0.2)), url(/Balochistan/assets/Makran_Coastal_Highway\,_Balochistan.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
 height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-      
 }
-.punjabi-culture button{
+.balochi-culture button{
     margin-top: 50px;
 }
-.punjabi-culture section{
+.balochi-culture section{
     text-align: center;
     padding-top: 15%;
     font-size: 40px;
@@ -152,13 +153,13 @@ height: 100vh;
     line-height: 1.3;
      
 }
-.punjabi-culture section .p1{
+.balochi-culture section .p1{
     font-family:Poppins;
     font-size: 50px;
     font-weight:600 ;
 
 }
-.punjabi-culture section .subline{
+.balochi-culture section .subline{
     font-size: 35px;
     margin-top: 10px;
     font-weight: 500;
@@ -266,7 +267,7 @@ padding-bottom: 0px;
     font-weight: 500;
     font-family: Poppins;
 }
-.lunghi{
+.balochi-shawl{
     display: flex;
     padding-left: 5%;
     padding-right: 5%;
@@ -275,7 +276,7 @@ padding-bottom: 0px;
     
 }
 /* ------------------------------------------------------------END sara content2 section------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------START OF lunghi section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------START OF balochi-shawl section------------------------------------------------------------------------------- */
 .photo img{
     border-radius: 10px;
     width: 600px;
@@ -289,16 +290,16 @@ padding-bottom: 0px;
    transform: scale(1.05);
    
 }
-.lunghi h4{
+.balochi-shawl h4{
     margin-top: 3%;
     font-family: Merriweather;
     font-size: 45px;
     color: rgba(0, 0, 255, 0.877);
 }
-.lunghi .one span{
+.balochi-shawl .one span{
     color: darkred;
 }
-.lunghi p{
+.balochi-shawl p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -306,17 +307,17 @@ padding-bottom: 0px;
     word-spacing: 1.5;
     padding: 3px 30px 0px 0px;
 }
-.lunghi .text-content{
+.balochi-shawl .text-content{
     padding-top: 3%;
 }
-.lunghi h4 span{
+.balochi-shawl h4 span{
     color: darkred;
 }
-.lunghi h4::first-letter{
+.balochi-shawl h4::first-letter{
     color: darkred;
 }
-/* ------------------------------------------------------------END of lunghi section section------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------START OF balochi-kurta section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------END of balochi-shawl section section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------START OF balochi-topi section------------------------------------------------------------------------------- */
 .sara-content3{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -327,21 +328,21 @@ padding-bottom: 0px;
     column-gap: 5%;
     
 }
-.balochi-kurta{
+.balochi-topi{
     padding-top: 4%;
     padding-left: 2%;
 }
-.balochi-kurta h5{
+.balochi-topi h5{
     margin-top: 3%;
     font-family: Merriweather;
     font-size: 45px;
     color: rgba(0, 0, 255, 0.877);
     
 }
-.balochi-kurta h5 span{
+.balochi-topi h5 span{
     color: darkorange;
 }
-.balochi-kurta p{
+.balochi-topi p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -366,9 +367,9 @@ padding-bottom: 0px;
     transform: scale(1.05);
 
 }
-/* ------------------------------------------------------------END of balochi-kurta section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------END of balochi-topi section------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------START OF KHUSSA section------------------------------------------------------------------------------- */
-.punjabi-khussa img{
+.balochi-chappal img{
     width: 700px;
     transition: .3s;
     height: auto;
@@ -376,18 +377,18 @@ padding-bottom: 0px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
-.punjabi-khussa img:hover{
+.balochi-chappal img:hover{
     transform: scale(1.05);
 
 }
-.punjabi-khussa{
+.balochi-chappal{
     display: flex;
     padding-left: 55px;
     padding-right: 55px;
     margin-top: 8%;
     column-gap: 1%;
 }
-.punjabi-khussa h6{
+.balochi-chappal h6{
     margin-top: 9%;
     font-family: Merriweather;
     font-size: 45px;
@@ -396,11 +397,11 @@ padding-bottom: 0px;
     color: rgb(105, 53, 18);
     
 }
-.punjabi-khussa span{
+.balochi-chappal span{
     color: rgb(158, 124, 10);
     font-size:2vw ;
 }
-.punjabi-khussa p{
+.balochi-chappal p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -410,9 +411,9 @@ padding-bottom: 0px;
 
 }
 /* ------------------------------------------------------------END of khussa section------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------START OF choli section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------START OF pashk section------------------------------------------------------------------------------- */
 
-.shalwar-kameez{
+.pashk-balochi{
     display: flex;
     padding-left: 55px;
     padding-right: 55px;
@@ -420,7 +421,7 @@ padding-bottom: 0px;
     margin-bottom: 15%;
     column-gap: 2%;
 }
-.shalwar-kameez .choli{
+.pashk-balochi .pashk{
     margin-top: 5%;
     font-family: Merriweather;
     font-size: 45px;
@@ -428,11 +429,11 @@ padding-bottom: 0px;
     font-weight: bold;
     color: chocolate;
 }
-.shalwar-kameez .choli span{
+.pashk-balochi .pashk span{
     color: crimson;
 
 }
-.shalwar-kameez p{
+.pashk-balochi p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -441,7 +442,7 @@ padding-bottom: 0px;
     padding: 5px 60px;
 
 }
-.shalwar-kameez img{
+.pashk-balochi img{
     width: 600px;
     transition: .3s;
     height: auto;
@@ -450,7 +451,7 @@ padding-bottom: 0px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 
 }
-.shalwar-kameez img:hover{
+.pashk-balochi img:hover{
     transform: scale(1.05);
 
 }
@@ -684,10 +685,11 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     padding: 5%;
     background-color: #aaaaaa;
     }
-    .main-sport-contaniner h5{
+    .main-sport-container h5{
         margin-bottom: 5%;
     padding-top: 5%;
         font-size: 40px;
+        text-align: center;
         font-family: Merriweather;
     }
     .sport-content h2{

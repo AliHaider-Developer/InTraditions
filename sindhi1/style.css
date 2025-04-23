@@ -259,7 +259,7 @@ padding-bottom: 0px;
     font-weight: 500;
     font-family: Poppins;
 }
-.lunghi{
+.Ajrak{
     display: flex;
     padding-left: 5%;
     padding-right: 5%;
@@ -268,7 +268,7 @@ padding-bottom: 0px;
     
 }
 /* ------------------------------------------------------------END sara content2 section------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------START OF lunghi section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------START OF Ajrak section------------------------------------------------------------------------------- */
 .photo img{
     border-radius: 10px;
     width: 600px;
@@ -282,16 +282,16 @@ padding-bottom: 0px;
    transform: scale(1.05);
    
 }
-.lunghi h4{
+.Ajrak h4{
     margin-top: 3%;
     font-family: Merriweather;
     font-size: 45px;
     color: rgba(0, 0, 255, 0.877);
 }
-.lunghi .one span{
+.Ajrak .one span{
     color: darkred;
 }
-.lunghi p{
+.Ajrak p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -299,17 +299,17 @@ padding-bottom: 0px;
     word-spacing: 1.5;
     padding: 3px 30px 0px 0px;
 }
-.lunghi .text-content{
+.Ajrak .text-content{
     padding-top: 3%;
 }
-.lunghi h4 span{
+.Ajrak h4 span{
     color: darkred;
 }
-.lunghi h4::first-letter{
+.Ajrak h4::first-letter{
     color: darkred;
 }
-/* ------------------------------------------------------------END of lunghi section section------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------START OF punjabi-kurta section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------END of Ajrak section section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------START OF balochi-kurta section------------------------------------------------------------------------------- */
 .sara-content3{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -320,21 +320,21 @@ padding-bottom: 0px;
     column-gap: 5%;
     
 }
-.punjabi-kurta{
+.balochi-kurta{
     padding-top: 4%;
     padding-left: 2%;
 }
-.punjabi-kurta h5{
+.balochi-kurta h5{
     margin-top: 3%;
     font-family: Merriweather;
     font-size: 45px;
     color: rgba(0, 0, 255, 0.877);
     
 }
-.punjabi-kurta h5 span{
+.balochi-kurta h5 span{
     color: darkorange;
 }
-.punjabi-kurta p{
+.balochi-kurta p{
     font-family: Poppins;
     font-weight: 400;
     text-align: justify;
@@ -357,7 +357,7 @@ padding-bottom: 0px;
     transform: scale(1.05);
 
 }
-/* ------------------------------------------------------------END of punjabi-kurta section------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------END of balochi-kurta section------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------START OF KHUSSA section------------------------------------------------------------------------------- */
 .punjabi-khussa img{
     width: 700px;
@@ -617,9 +617,10 @@ padding-bottom: 5%;
 
 .food-heading {
     font-family: "Playfair Display", serif;
-    font-size: 38px;
+    font-size: 40px;
     color: #fff;
-    margin-bottom: 30px;
+    
+    margin-bottom: 5%;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -762,7 +763,84 @@ p {
 .sport-section:nth-child(5) { animation-delay: 0.5s; }
 
 
+/* ---------------------------------------------------satrt of festivals--------------------------------------- */
 
+
+.festival-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #e4e4e1;
+  }
+  .festival-title {
+    font-family: Merriweather;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  .festival-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .festival-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    
+  }
+  .festival-image,.festival-item{
+      transition-duration: 0.3s;
+    }
+    .festival-item:hover{
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      scale: 1.05;
+    }
+
+    .festival-heading {
+      font-size: 30px;
+      color: #800000;
+      margin-bottom: 10px;
+      border-bottom:  3px solid transparent;
+      transition-duration: 0.3s;
+      padding-bottom: 2px;
+    }
+    
+
+  .festival-item:hover .festival-image {
+      rotate: 1deg;
+    transform: scale(1.03);
+  }
+  .festival-item.reverse:hover .festival-image{
+    rotate: -1deg;
+    
+  }
+
+  .festival-item.reverse {
+    flex-direction: row-reverse;
+  }
+  .festival-image {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .festival-info {
+    width: 50%;
+    text-align: left;
+  }
+  .festival-info p {
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+  }
+
+
+
+/* ---------------------------------------------------end of festivals--------------------------------------- */
 
 
 
