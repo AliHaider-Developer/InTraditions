@@ -7,7 +7,7 @@
     padding: 0;
 }
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     overscroll-behavior: smooth;
 }
 
@@ -130,6 +130,116 @@ button:hover {
     transform: scale(1.2);
 }
 
+/*----------------------------------------- circles section------------------------------ */
+
+
+
+.circle-nav-section {
+    background: #ece9f1; /* Light pastel lavender */
+    padding: 0px 0px 150px 0px;
+    text-align: center;
+  }
+  
+  .section-title {
+    
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #3b2c5a;
+    font-family: Merriweather;
+  }
+  
+  .circle-container {
+    width: 600px;
+    height: 600px;
+    margin-left: 32%;
+    position: relative;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .circle-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: Poppins;
+    text-align: center;
+    transition: background 0.4s ease;
+  }
+  
+  .circle:hover .circle-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+  }
+  
+  /* Hover effect on circle */
+  .circle:hover {
+    transform: scale(1.15);  /* Zoom effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);  /* Stronger shadow */
+    filter: brightness(1.1);  /* Slight brightness increase */
+  }
+  
+  /* Custom layout for flowy circle arrangement */
+  .circle:nth-child(1) { top: 5%; left: 45%; }
+  .circle:nth-child(2) { top: 28%; left: 85%; }
+  .circle:nth-child(3) { top: 65%; left: 70%; }
+  .circle:nth-child(4) { top: 80%; left: 30%; }
+  .circle:nth-child(5) { top: 30%; left: 5%; }
+
+
+
+/* ---------------------------end circle section-------------------------   */
+/* start of arrow section */
+.arrow-container{
+    position: relative;
+    height: 80vh;
+    z-index: 999;
+    
+}
+
+.arrow{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        position: fixed;
+    right: 50px;
+    bottom: 50px;
+     padding: 10px;
+    background: #006600;
+    border-radius: 50%;
+
+    top: 80vh;
+    align-self: flex-end;
+
+overflow: hidden;
+
+    animation: upDownPause 3s infinite; 
+    cursor: pointer;
+
+}
+@keyframes upDownPause {
+    0% { transform: translateY(0); }
+    10% { transform: translateY(-10px); } /* thodi move up */
+    20% { transform: translateY(0); }      /* wapas niche */
+    100% { transform: translateY(0); }     /* baki time static */
+  }
+
+
+
+/*  end start of arrow section */
 
 
 .punjabi-culture {
@@ -802,8 +912,15 @@ p {
     }
 
     .festival-heading {
+        background-color: #772525; /* deep maroon */
+        color: white;
+        padding: 12px;
+        font-weight: bold;
+        border-radius: 8px;
+        font-family: Poppins;
+        justify-content: center;
       font-size: 30px;
-      color: #800000;
+      /* color: #2E8B57; */
       margin-bottom: 10px;
       border-bottom:  3px solid transparent;
       transition-duration: 0.3s;

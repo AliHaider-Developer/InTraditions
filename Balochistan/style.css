@@ -130,6 +130,120 @@ button:hover {
 }
 
 
+/*----------------------------------------- circles section------------------------------ */
+
+
+
+.circle-nav-section {
+    background: #ece9f1; /* Light pastel lavender */
+    padding: 0px 0px 150px 0px;
+    text-align: center;
+  }
+  
+  .section-title {
+    
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #3b2c5a;
+    font-family: Merriweather;
+  }
+  
+  .circle-container {
+    width: 600px;
+    height: 600px;
+    margin-left: 32%;
+    position: relative;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .circle-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: Poppins;
+    text-align: center;
+    transition: background 0.4s ease;
+  }
+  
+  .circle:hover .circle-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+  }
+  
+  /* Hover effect on circle */
+  .circle:hover {
+    transform: scale(1.15);  /* Zoom effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);  /* Stronger shadow */
+    filter: brightness(1.1);  /* Slight brightness increase */
+  }
+  
+  /* Custom layout for flowy circle arrangement */
+  .circle:nth-child(1) { top: 5%; left: 45%; }
+  .circle:nth-child(2) { top: 28%; left: 85%; }
+  .circle:nth-child(3) { top: 65%; left: 70%; }
+  .circle:nth-child(4) { top: 80%; left: 30%; }
+  .circle:nth-child(5) { top: 30%; left: 5%; }
+
+
+
+/* ---------------------------end circle section-------------------------   */
+/* start of arrow section */
+.arrow-container{
+    position: relative;
+    height: 80vh;
+    z-index: 999;
+    
+}
+
+.arrow{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+     padding: 10px;
+    background: #006600;
+    border-radius: 50%;
+
+    top: 80vh;
+    align-self: flex-end;
+    overflow: hidden;
+
+
+    animation: upDownPause 3s infinite; 
+    cursor: pointer;
+
+}
+@keyframes upDownPause {
+    0% { transform: translateY(0); }
+    10% { transform: translateY(-10px); } /* thodi move up */
+    20% { transform: translateY(0); }      /* wapas niche */
+    100% { transform: translateY(0); }     /* baki time static */
+  }
+
+
+
+/*  end start of arrow section */
+
+
+
 
 .balochi-culture {
     
@@ -187,6 +301,9 @@ p{
     color: darkred;
     font-weight: 900;
 }
+#sub-hero{
+    color: #9E2A2F;
+}
 
     .sub-hero-2{
     display: flex;
@@ -220,7 +337,7 @@ padding-bottom: 0px;
     margin-top: 5%;
     font-size: 50px;
     font-family: Merriweather;
-    color: #aa5500;
+    color: #F9A825;
 }
 .pottery img{
     border-radius: 10px;
@@ -232,6 +349,9 @@ padding-bottom: 0px;
 .pottery img:hover{
     transform: scale(1.05);
 }
+p{
+    color: #3C3C3C;
+}
 .paragraph2{
     font-family: Poppins;
     font-weight: 400;
@@ -239,6 +359,7 @@ padding-bottom: 0px;
     line-height: 1.6;
     word-spacing: 1.5;
     padding: 20px 0px 0px 0px;
+    color: #3C3C3C;
 }
 .paragraph2::first-letter{
     font-size: 40px;
@@ -248,12 +369,13 @@ padding-bottom: 0px;
 }
 /* ------------------------------------------------------------sara content2 section------------------------------------------------------------------------------- */
 .sara-content2 {
-    margin-top: 15%;
+    padding-top: 10%;
+    
     text-align: center;
     
 }
 .sara-content2 h4{
-    
+    padding: 0%;
     font-size: 5vh;
     font-family: Merriweather;
 }
@@ -487,6 +609,7 @@ article {
   
   /* basic article elements styling */
   article h6 {
+    padding-top: 5%;
     text-align: center;
     margin: 0 0 20px 0;
     font-family: "Bebas Neue", cursive;
@@ -529,11 +652,11 @@ article {
   
   .main-heading-cul-pl h6 {
     text-transform: uppercase; 
-    color: #800000;
+    color: #9E2A2F;
     text-align: center;
     font-size: 40px;
     margin-bottom: 5%;
-    padding-top: 5%;
+    padding-top: 10%;
     font-weight: 600;
     font-family: Playfair Display;
     
@@ -623,6 +746,7 @@ article {
 }
 
 .food-heading {
+    padding-bottom: 5%;
     font-family: "Playfair Display", serif;
     font-size: 38px;
     color: #fff;
@@ -639,7 +763,7 @@ article {
 }
 
 .food-card {
-    background: rgba(255, 255, 255, 0.95);
+    background:  #D7B98D;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -657,15 +781,16 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
 
 .food-card h3 {
     font-size: 22px;
-    color: #8C6239;
+    color: #5C4033;
     margin-bottom: 10px;
-    font-family: "Merriweather", serif;
+    font-family:Poppins;
 }
 
 .food-card p {
-    font-size: 16px;
-    color: #444;
+    font-size: 20px;
+    color: #5C4033;
     line-height: 1.5;
+    font-family: Merriweather;
 }
 
 .food-image {
@@ -681,7 +806,7 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
 
 /* ------------------------------------------------end of food cards----------------------------------------------- */
 /* ------------------------------------------------start of sports cards----------------------------------------------- */
-.main-sport-contaniner{
+.main-sport-container{
     padding: 5%;
     background-color: #aaaaaa;
     }
@@ -701,7 +826,7 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
         font-family: Poppins;
     }
     .sport-section {
-        background-color: white;
+        background-color: rgb(228, 228, 228);
         margin: 20px auto;
         padding: 20px;
         border-radius: 8px;
@@ -710,8 +835,7 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     justify-content: center;
         transition: all 0.3s ease-in-out;
         transform: scale(1);
-        width: 70%;
-    }
+        width: 70%;    }
     .sport-section:hover {
         transform: scale(1.02);
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -771,6 +895,10 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     
     
     
+
+    
+    
+    
     
     
     
@@ -780,13 +908,13 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
 .festival-section {
     text-align: center;
     padding: 40px;
-    background-color: #e4e4e1;
+    background-color: #d6d6d4;
   }
   .festival-title {
     font-family: Merriweather;
     font-size: 40px;
     margin-bottom: 40px;
-    color: #333;
+    color: #9E2A2F;
   }
   .festival-container {
     display: flex;
@@ -796,10 +924,11 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     margin: auto;
   }
   .festival-item {
+    
     display: flex;
     align-items: center;
     gap: 20px;
-    background: white;
+    background-color: #D7B98D;
     padding: 20px;
     border-radius: 12px;
     
@@ -813,10 +942,17 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     }
 
     .festival-heading {
+        
+        color: #9E2A2F;
+        padding: 12px;
+        font-weight: bold;
+        border-radius: 8px;
+        font-family: Poppins;
+        justify-content: center;
       font-size: 30px;
-      color: #800000;
+      /* color: #2E8B57; */
       margin-bottom: 10px;
-      border-bottom:  3px solid transparent;
+      
       transition-duration: 0.3s;
       padding-bottom: 2px;
     }
@@ -844,9 +980,10 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     text-align: left;
   }
   .festival-info p {
+    font-family: Merriweather;
     text-align: left;
-    font-size: 16px;
-    color: #555;
+    font-size: 20px;
+    color:  #5C4033;
   }
 
 
@@ -926,6 +1063,7 @@ footer {
 }
 
 .second-fot-container h5 {
+    font-family: Poppins;
     color: #006600;
     font-size: 30px;
     margin-bottom: 15px;
