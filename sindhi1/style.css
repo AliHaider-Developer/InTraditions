@@ -149,10 +149,12 @@ button:hover {
   }
   
   .circle-container {
+ 
     width: 600px;
     height: 600px;
-    margin-left: 32%;
+    margin-left: 30%;
     position: relative;
+    
   }
   
   .circle {
@@ -195,7 +197,7 @@ button:hover {
   }
   
   /* Custom layout for flowy circle arrangement */
-  .circle:nth-child(1) { top: 5%; left: 45%; }
+  .circle:nth-child(1) { top: 10%; left: 45%; }
   .circle:nth-child(2) { top: 28%; left: 85%; }
   .circle:nth-child(3) { top: 65%; left: 70%; }
   .circle:nth-child(4) { top: 80%; left: 30%; }
@@ -350,7 +352,7 @@ padding-bottom: 0px;
 }
 /* ------------------------------------------------------------sara content2 section------------------------------------------------------------------------------- */
 .sara-content2 {
-    margin-top: 15%;
+    padding-top: 10%;
     text-align: center;
     
 }
@@ -558,19 +560,19 @@ padding-bottom: 0px;
 
 /* ----------------------------------------------cards section---------------------------------------------------------------------------- */
 .culture-places{
-    background-color: #EDE0D4;
+    background-color: #f3f0ea;
    
   
 }
 article {
     --img-scale: 1.001;
-    --title-color: black;
+    --title-color: #b22222;
     --link-icon-translate: -20px;
     --link-icon-opacity: 0;
     position: relative;
     border-radius: 16px;
     box-shadow: none;
-    background: #fff;
+    background: #fae6e3;
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
@@ -606,6 +608,7 @@ article {
 
   article img {
 
+width: fit-content;
     max-width: 100%;
     transform-origin: center;
     transform: scale(var(--img-scale));
@@ -630,7 +633,7 @@ article {
   
   .main-heading-cul-pl h6 {
     text-transform: uppercase; 
-    color: #800000;
+    color: #B7410E;
     text-align: center;
     font-size: 40px;
     margin-bottom: 5%;
@@ -639,14 +642,17 @@ article {
     font-family: Playfair Display;
     
 }
+.article-body p {
+  color: #333;
+}
   
   /* using the has() relational pseudo selector to update our custom properties */
   article:hover, :focus{
     --img-scale: 1.1;
-    --title-color: #28666e;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
   }
   
   
@@ -674,6 +680,42 @@ article {
   .article-body p{
     text-align: justify;
   }
+
+.button-container {
+justify-content: center;
+
+width: fit-content;
+margin:auto;
+margin-top: 20px;
+}
+
+.cards-but {
+  position: relative;
+  top: 0px;
+  background: #B7410E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  z-index: 900;
+  outline: 1px solid transparent;
+}
+article:hover .cards-but {
+    top: -3px;
+    outline: 1px solid #B7410E;
+    color: #B7410E;
+  background: transparent;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+
   @media screen and (max-width: 960px) {
     article {
       container: card/inline-size;
@@ -719,18 +761,19 @@ article {
 /* ----------------------------------------------start of food cards section---------------------------------------------------------------------------- */
 
 
+
 .food-section {
-    background: linear-gradient(to right, #A67C52, #8C6239); /* Warm historical colors */
-padding-bottom: 5%;
+    background: #fff9ed;
+    padding: 60px;
     text-align: center;
 }
 
 .food-heading {
-    font-family: "Playfair Display", serif;
+    padding-bottom: 5%;
+
     font-size: 40px;
-    color: #fff;
-    
-    margin-bottom: 5%;
+    color: #B7410E;
+    margin-bottom: 30px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -743,7 +786,7 @@ padding-bottom: 5%;
 }
 
 .food-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: #fff5e6;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -761,16 +804,16 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
 
 .food-card h3 {
     font-size: 22px;
-    color: #8C6239;
+    color: 	#8a3600;
     margin-bottom: 10px;
-    font-family: "Merriweather", serif;
+    font-family:Poppins;
 }
 
 .food-card p {
-    font-size: 16px;
-    color: #444;
+    font-size: 20px;
+    color: #5e3b1a;
     line-height: 1.5;
-    font-family: Poppins;
+    font-family: Merriweather;
 }
 
 .food-image {
@@ -783,122 +826,132 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
 .food-card:hover .food-image {
     transform: scale(1.08);
 }
-
 /* ------------------------------------------end of food cards--------------------------------------------------------------- */
 .main-sport-contaniner{
-padding: 5%;
-background-color: #aaaaaa;
-}
-.main-sport-contaniner h5{
-    margin-bottom: 5%;
-padding-top: 5%;
-    font-size: 50px;
-    font-family: Merriweather;
-}
-.sport-content h2{
-    font-family: Poppins;
-    font-size: 40px;
-    padding-bottom: 5%;
-}
-.sport-content strong{
-    font-family: Poppins;
-}
-.sport-section {
-    background-color: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-justify-content: center;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1);
-    width: 70%;
-}
-.sport-section:hover {
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-
-}
-.sport-image {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    margin-right: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-.sport-section:hover .sport-image {
-    transform: rotate(3deg);
-}
-.sport-content {
-    flex: 1;
-}
-.sport-title {
-    color: #333;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-    transition: color 0.3s ease;
-}
-.sport-section:hover .sport-title {
-    color: #007bff;
-}
-p {
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-    font-family: Poppins;
-}
-.sport-section:hover p {
-    opacity: 1;
-}
-/* Subtle fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+    padding: 5%;
+    background-color: #F2F2F2;
     }
-    to {
+    .main-sport-contaniner h5{
+        text-align: center;     
+         text-shadow: -1px 3px 6px rgba(0,0,0,0.5);
+        color: #B7410E;
+        padding: 16px;
+        font-weight: bold;
+        margin: 3%;
+        font-family: Merriweather;
+      font-size: 40px;
+      border-bottom:  3px solid transparent;
+      transition-duration: 0.3s;
+      padding-bottom: 2px;
+    }
+    .sport-content h2{
+        font-family: Poppins;
+        font-size: 40px;
+        padding-bottom: 5%;
+    }
+    .sport-content strong{
+        font-family: Poppins;
+    }
+    .sport-section {
+        
+        background-color: #D0E7F2;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: flex;
+    justify-content: center;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+        width: 70%;
+    }
+    .sport-section:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    
+    }
+    .sport-image {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        margin-right: 20px;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .sport-section:hover .sport-image {
+        transform: rotate(3deg);
+    }
+    .sport-content {
+        flex: 1;
+    }
+    .sport-title {
+        color: #9B1B30;
+        border-bottom: 2px solid #9B1B30;
+        padding-bottom: 10px;
+        transition: color 0.3s ease;
+    }
+    
+    .sport-content p {
+        color: #333333;
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
+        font-family: Poppins;
+    }
+    .sport-section:hover p {
         opacity: 1;
-        transform: translateY(0);
     }
-}
-.sport-section {
-    animation: fadeIn 0.5s ease-out;
-    animation-fill-mode: backwards;
-}
-.sport-section:nth-child(1) { animation-delay: 0.1s; }
-.sport-section:nth-child(2) { animation-delay: 0.2s; }
-.sport-section:nth-child(3) { animation-delay: 0.3s; }
-.sport-section:nth-child(4) { animation-delay: 0.4s; }
-.sport-section:nth-child(5) { animation-delay: 0.5s; }
+    /* Subtle fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .sport-section {
+        animation: fadeIn 0.5s ease-out;
+        animation-fill-mode: backwards;
+    }
+    .sport-section:nth-child(1) { animation-delay: 0.1s; }
+    .sport-section:nth-child(2) { animation-delay: 0.2s; }
+    .sport-section:nth-child(3) { animation-delay: 0.3s; }
+    .sport-section:nth-child(4) { animation-delay: 0.4s; }
+    .sport-section:nth-child(5) { animation-delay: 0.5s; }
+    
+    
+    
+    
 
 
 /* ---------------------------------------------------satrt of festivals--------------------------------------- */
 
-
 .festival-section {
     text-align: center;
     padding: 40px;
-    background-color: #e4e4e1;
+    background-color: #F3F8FB;
   }
   .festival-title {
     font-family: Merriweather;
     font-size: 40px;
     margin-bottom: 40px;
-    color: #333;
+    color: #B7410E;
+    text-shadow: -1px 3px 6px rgba(0,0,0,0.5);
   }
   .festival-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
   }
   .festival-item {
     display: flex;
     align-items: center;
     gap: 20px;
-    background: white;
+    background:#E3E6F0;
     padding: 20px;
     border-radius: 12px;
     
@@ -912,8 +965,8 @@ p {
     }
 
     .festival-heading {
-        background-color: #772525; /* deep maroon */
-        color: white;
+        
+        color: #8B0000;
         padding: 12px;
         font-weight: bold;
         border-radius: 8px;
@@ -951,9 +1004,11 @@ p {
   }
   .festival-info p {
     text-align: left;
-    font-size: 16px;
-    color: #555;
+    font-size: 20px;
+    color: #2C2C2C;
+    font-family: Merriweather;
   }
+
 
 
 

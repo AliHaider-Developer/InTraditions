@@ -151,7 +151,7 @@ button:hover {
   .circle-container {
     width: 600px;
     height: 600px;
-    margin-left: 32%;
+    margin-left: 30%;
     position: relative;
   }
   
@@ -195,7 +195,7 @@ button:hover {
   }
   
   /* Custom layout for flowy circle arrangement */
-  .circle:nth-child(1) { top: 5%; left: 45%; }
+  .circle:nth-child(1) { top: 10%; left: 45%; }
   .circle:nth-child(2) { top: 28%; left: 85%; }
   .circle:nth-child(3) { top: 65%; left: 70%; }
   .circle:nth-child(4) { top: 80%; left: 30%; }
@@ -358,7 +358,7 @@ padding-bottom: 0px;
 }
 /* ------------------------------------------------------------sara content2 section------------------------------------------------------------------------------- */
 .sara-content2 {
-    margin-top: 15%;
+    padding-top: 10%;
     text-align: center;
     
 }
@@ -568,13 +568,13 @@ padding-bottom: 0px;
 
 /* ----------------------------------------------cards section---------------------------------------------------------------------------- */
 .culture-places{
-    background-color: #EDE0D4;
+    background-color: #EEF5EE;
    
   
 }
 article {
     --img-scale: 1.001;
-    --title-color: black;
+    --title-color: #4C6B40;
     --link-icon-translate: -20px;
     --link-icon-opacity: 0;
     position: relative;
@@ -625,7 +625,12 @@ article {
   .article-body {
     padding: 30px;
   }
-  
+  .article-body p{
+    color: #2F5D3A;
+  }
+  .article-wrapper{
+    background-color: #E3ECE3;
+  }
   article  {
     display: inline-flex;
     align-items: center;
@@ -639,24 +644,26 @@ article {
   
   .main-heading-cul-pl h6 {
     text-transform: uppercase; 
-    color: #800000;
+    
     text-align: center;
     font-size: 40px;
     margin-bottom: 5%;
-    padding-top: 5%;
+   
     font-weight: 600;
     font-family: Playfair Display;
     
 }
 .main-heading-cul-pl h6 {
     line-height: 60px;
+    color: #2e4e1f;
+    padding-top: 10%;
 }
   
   /* using the has() relational pseudo selector to update our custom properties */
   article:hover, :focus{
     cursor: pointer;
     --img-scale: 1.1;
-    --title-color: #28666e;
+    --title-color: #4f7a3e;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -730,16 +737,19 @@ article {
 /* ----------------------------------------------start of food cards section---------------------------------------------------------------------------- */
 
 
+
+
 .food-section {
-    background: linear-gradient(to right, #A67C52, #8C6239); /* Warm historical colors */
+    background: #f5fff5;
     padding: 60px;
     text-align: center;
 }
 
 .food-heading {
+    padding-bottom: 5%;
     font-family: "Playfair Display", serif;
     font-size: 38px;
-    color: #fff;
+    color: #2e4e1f;
     margin-bottom: 30px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -753,7 +763,7 @@ article {
 }
 
 .food-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: #effff0;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -771,15 +781,16 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
 
 .food-card h3 {
     font-size: 22px;
-    color: #8C6239;
+    color: #2e4e1f;
     margin-bottom: 10px;
-    font-family: "Merriweather", serif;
+    font-family:Poppins;
 }
 
 .food-card p {
-    font-size: 16px;
-    color: #444;
+    font-size: 20px;
+    color: #2e3f2e;
     line-height: 1.5;
+    font-family: Merriweather;
 }
 
 .food-image {
@@ -797,19 +808,17 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
 /* ------------------------------------------------start of sports cards----------------------------------------------- */
 .main-sport-contaniner{
     padding: 5%;
-    background-color: #aaaaaa;
+    background-color: #E6F0D8;
     }
     .main-sport-contaniner h5{
-        background-color: #800000; /* deep maroon */
-        color: white;
+        text-align: center;     
+         text-shadow: -1px 3px 6px rgba(0,0,0,0.5);
+        color: #2e4e1f;
         padding: 16px;
         font-weight: bold;
-        border-radius: 8px;
-        font-family: Poppins;
-        justify-content: center;
-      font-size: 30px;
-      /* color: #2E8B57; */
-
+        margin: 3%;
+        font-family: Merriweather;
+      font-size: 40px;
       border-bottom:  3px solid transparent;
       transition-duration: 0.3s;
       padding-bottom: 2px;
@@ -824,7 +833,7 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     }
     .sport-section {
         
-        background-color: white;
+        background-color: #DDE5B6;
         margin: 20px auto;
         padding: 20px;
         border-radius: 8px;
@@ -855,15 +864,14 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
         flex: 1;
     }
     .sport-title {
-        color: #333;
-        border-bottom: 2px solid #007bff;
+        color: #2E7D32;
+        border-bottom: 2px solid #2E7D32;
         padding-bottom: 10px;
         transition: color 0.3s ease;
     }
-    .sport-section:hover .sport-title {
-        color: #333333 ;
-    }
-    p {
+    
+    .sport-content p {
+        color: #2C2C2C;
         opacity: 0.9;
         transition: opacity 0.3s ease;
         font-family: Poppins;
@@ -903,13 +911,14 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
 .festival-section {
     text-align: center;
     padding: 40px;
-    background-color: #e4e4e1;
+    background-color: #EDF5E1;
   }
   .festival-title {
     font-family: Merriweather;
     font-size: 40px;
     margin-bottom: 40px;
-    color: #333;
+    color: #1B4332;
+    text-shadow: -1px 3px 6px rgba(0,0,0,0.5);
   }
   .festival-container {
     display: flex;
@@ -922,7 +931,7 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     display: flex;
     align-items: center;
     gap: 20px;
-    background: rgb(241, 241, 241);
+    background:#DCEED1;
     padding: 20px;
     border-radius: 12px;
     
@@ -936,8 +945,8 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
     }
 
     .festival-heading {
-        background-color: #800000; /* deep maroon */
-        color: white;
+        
+        color: #228B22;
         padding: 12px;
         font-weight: bold;
         border-radius: 8px;
@@ -975,8 +984,9 @@ transform: translateY(-8px) rotate(-2deg); /* Slight tilt effect */
   }
   .festival-info p {
     text-align: left;
-    font-size: 16px;
-    color: #555;
+    font-size: 20px;
+    color: #2E3A3A;
+    font-family: Merriweather;
   }
 
 
@@ -1056,6 +1066,7 @@ footer {
 }
 
 .second-fot-container h5 {
+    font-family: Poppins;
     color: #006600;
     font-size: 30px;
     margin-bottom: 15px;
