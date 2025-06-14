@@ -20,7 +20,7 @@ body {
     
     font-family: "Montserrat", serif;
     margin: 0;
-    font-family: "Figtree", sans-serif;
+    font-family: "Poppins", sans-serif;
   
     line-height: 1.6rem;
    
@@ -668,6 +668,40 @@ article {
     font-family: Playfair Display;
     
 }
+  .button-container {
+justify-content: center;
+
+width: fit-content;
+margin:auto;
+margin-top: 20px;
+}
+
+.cards-but {
+  position: relative;
+  top: 0px;
+  background: #B7410E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  z-index: 900;
+  outline: 1px solid transparent;
+}
+article:hover .cards-but {
+    top: -3px;
+    outline: 1px solid #B7410E;
+    color: #B7410E;
+  background: transparent;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
 .article-body p {
    color: #4B4032;
   }
