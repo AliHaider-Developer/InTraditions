@@ -659,6 +659,39 @@ article {
     padding-top: 10%;
 }
   
+  .button-container {
+justify-content: center;
+
+width: fit-content;
+margin:auto;
+margin-top: 20px;
+}
+
+.cards-but {
+  position: relative;
+  top: 0px;
+  background: #2e4e1f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  z-index: 900;
+  outline: 1px solid transparent;
+}
+article:hover .cards-but {
+    top: -3px;
+    outline: 1px solid #2e4e1f;
+    color: #2e4e1f;
+  background: transparent;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
   /* using the has() relational pseudo selector to update our custom properties */
   article:hover, :focus{
     cursor: pointer;
