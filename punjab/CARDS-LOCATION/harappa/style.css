@@ -180,7 +180,7 @@ background-color: #f8f4f0;
     .gallery img {
       width: 100%;
       border-radius: 10px;
-      object-fit: cover;
+      object-fit: contain;
       transition: transform 0.3s ease;
     }
     .gallery img:hover {
