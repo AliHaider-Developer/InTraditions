@@ -98,12 +98,16 @@
     <div class="image-gallery">
       <h2>Image Gallery</h2>
       <div class="gallery">
-        <img src="/kpk/assets/places cards/sethi1.webp" alt="Sethi House Image 1" />
-        <img src="/kpk/assets/places cards/sethi2.webp" alt="Sethi House Image 2" />
-        <img src="/kpk/assets/places cards/sethi3.webp" alt="Sethi House Image 3" />
-        <img src="/kpk/assets/places cards/sethi4.webp" alt="Sethi House Image 4" />
+        <img src="/Khyber-pakhtun/CARDS-LOCATION/sethi house/sethi-house1.jpg" alt="Sethi House Image 1" />
+        <img src="/Khyber-pakhtun/CARDS-LOCATION/sethi house/sethi-house2.jpg" alt="Sethi House Image 2" />
+        <img src="/Khyber-pakhtun/CARDS-LOCATION/sethi house/sethi-house3.jpg" alt="Sethi House Image 3" />
+        <img src="/Khyber-pakhtun/CARDS-LOCATION/sethi house/sethi-house4.jpg" alt="Sethi House Image 4" />
       </div>
     </div>
+  <div id="imageModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modalImage" />
+        </div>
 
     <div style="
       display: flex;
@@ -211,6 +215,34 @@
       <img src="/sindhi1/assets/png/footer.png" alt="Footer Design" class="footer-decor" />
     </div>
   </footer>
+
+      <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const images = document.querySelectorAll(".gallery img");
+        const closeBtn = document.querySelector(".close");
+
+        images.forEach((img) => {
+          img.addEventListener("click", () => {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            document.body.style.overflow = "hidden"; // Disable scroll
+          });
+        });
+
+        closeBtn.onclick = () => {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto"; // Enable scroll
+        };
+
+        window.onclick = (event) => {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; // Enable scroll
+          }
+        };
+      </script>
+
 </body>
 
 </html>
