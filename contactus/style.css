@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 html {
-    scroll-behavior:smooth;
- overflow-x: hidden; /* Prevents horizontal scroll */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* Prevents horizontal scroll */
     overscroll-behavior: smooth;
 }
+
 /* Navbar styles */
 nav {
-    
-    
+
+
     position: fixed;
     padding: 3px 10%;
     background-color: rgba(0, 0, 0, 0.322);
@@ -22,20 +26,21 @@ nav {
     z-index: 1000;
     backdrop-filter: blur(15px);
     position: fixed;
-   
-
+    flex-wrap: wrap;
+    font-family: Poppins, sans-serif;
     width: 100%;
-    display: flex; 
+    display: flex;
     flex-direction: row;
-     align-items: center; 
-     justify-content: space-around;
-     padding-top: 15px;
-     padding-bottom: 15px;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -47,9 +52,8 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     color: #dca854;
-    font-size: 1vw;
+    font-size: 1.2rem;
     transition: 0.3s;
-    font-family: Poppins;
 }
 
 nav ul li a:hover {
@@ -64,7 +68,7 @@ nav ul li a:hover {
     left: 0;
     top: 100%;
     background-color: rgba(0, 0, 0, 0.418);
-   
+
 }
 
 nav ul li:hover .dropdown-menu {
@@ -79,7 +83,7 @@ nav ul li:hover .dropdown-menu {
 
 .dropdown-menu ul li {
     padding: 10px 30px;
-    
+
 }
 
 /* Button styles */
@@ -93,14 +97,15 @@ button {
     padding: 8px 12px;
     transition: 0.5s;
     width: auto;
-    font-family: Poppins    ;
+    font-family: Poppins;
     height: auto;
-    
+
 }
-.hero-text button{
+
+.hero-text button {
     margin-top: 2%;
 }
- 
+
 button:hover {
     color: #ffffff;
     background-color: #006600;
@@ -110,47 +115,52 @@ button:hover {
 /* Logo styles */
 .logo {
 
-     
+
     display: block;
 
     transition-duration: 0.3s;
     overflow: hidden;
-    
+
 }
 
 .logo:hover {
     transform: scale(1.2);
-} 
+}
 
 /* ------------------------------------------------nav end-------------------------------------------------- */
 
-h1{
+h1 {
     font-family: Montserrat;
 }
-.form-container p{
+
+.form-container p {
     font-family: Poppins;
 }
-::-webkit-input-placeholder{
+
+::-webkit-input-placeholder {
     font-family: Poppins;
 }
-form{
+
+form {
     margin-top: 25px;
 }
-body{
-    background-image:url("/contactus/asserts/Beautiful Rainy Evening in the Village of Punjab, Pakistan.jpeg");
+
+body {
+    background-image: url("/contactus/A_village_house_in_Pakistan.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .page-container {
     width: 100%;
     max-width: 1100px;
     position: relative;
     margin: auto;
 
-margin-top:10%;
+    margin-top: 10%;
 
-margin-bottom:10%;
-   
+    margin-bottom: 10%;
+
 }
 
 .bg-shape {
@@ -159,8 +169,8 @@ margin-bottom:10%;
     right: 0;
     width: 40%;
     height: 100%;
-    background-color: #00483d;
-    clip-path:polygon(100% 0, 0 0, 100% 100%);
+    background-color: #35635c;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
     z-index: -1;
 }
 
@@ -188,7 +198,8 @@ margin-bottom:10%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     color: white;
 }
-.info-container h2{
+
+.info-container h2 {
     font-family: Montserrat;
 }
 
@@ -370,14 +381,17 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-    .form-container, .info-container {
+
+    .form-container,
+    .info-container {
         width: 100%;
     }
-    
+
     .bg-shape {
         display: none;
     }
-}   
+}
+
 /* ------------------------------------------------------------------------------footer-----------------------------------------------------------------------------*/
 /* Footer Base */
 
@@ -394,12 +408,17 @@ footer {
 /* Footer Main Container */
 .main-fot-container {
     display: flex;
-    justify-content: space-between;  /* Equal spacing */
-    align-items: flex-start;         /* Align to the top */
-    gap: 5vw;                        /* Adjusts spacing between sections */
-    padding: 20px 5%;                /* Adds some padding */
-    flex-wrap: nowrap;   
-    margin-top: 5%;             /* Prevents wrapping */
+    justify-content: space-between;
+    /* Equal spacing */
+    align-items: flex-start;
+    /* Align to the top */
+    gap: 5vw;
+    /* Adjusts spacing between sections */
+    padding: 20px 5%;
+    /* Adds some padding */
+    flex-wrap: nowrap;
+    margin-top: 5%;
+    /* Prevents wrapping */
 }
 
 
@@ -408,16 +427,18 @@ footer {
     width: 30%;
     margin-top: 10px;
 }
+
 .first-fot-container .logo {
     width: 25vh;
     height: auto;
 }
+
 .footer-text-one {
     text-align: justify;
     font-size: 20px;
     margin-top: 20px;
-  
-    
+
+
 }
 
 /* Contact Section */
@@ -447,32 +468,36 @@ footer {
     gap: 10px;
     margin-bottom: 10px;
 }
+
 .first-fot-container,
 .second-fot-container,
 .third-fot-container {
-    width: 30%; /* Ensures equal width */
+    width: 30%;
+    /* Ensures equal width */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
 }
-.second-fot-container{
+
+.second-fot-container {
     text-align: center;
     display: inline;
     justify-content: center;
     margin-top: 4%;
-    
+
 }
-.third-fot-container{
+
+.third-fot-container {
     margin-top: 10%;
-} 
+}
 
 /* Contact Icon Background */
 .fot-icon {
     width: 50px;
     height: 50px;
     background-color: transparent;
-   
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -488,7 +513,7 @@ footer {
     padding: 0;
 }
 
-.contact-item p{
+.contact-item p {
     letter-spacing: 1;
 }
 
@@ -523,21 +548,23 @@ footer {
 .third-fot-container ul li a:hover {
     color: #006600;
 }
+
 .third-fot-container a {
     position: relative;
     z-index: 10;
 }
+
 /* Footer Decorative Image */
 .footer-decor {
     width: 600px;
     height: auto;
 
-margin-top: 50px;
-margin-right: -180px;
-margin-left: -600px;
-margin-bottom: -59px;
-position: relative;
-overflow: hidden; 
+    margin-top: 50px;
+    margin-right: -180px;
+    margin-left: -600px;
+    margin-bottom: -59px;
+    position: relative;
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {

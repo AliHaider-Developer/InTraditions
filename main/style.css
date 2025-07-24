@@ -6,14 +6,17 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
   overscroll-behavior: smooth;
-  overflow-x: hidden; /* Prevents horizontal scroll */
+  overflow-x: hidden;
+  /* Prevents horizontal scroll */
 }
 
 body {
-  user-select: none; /* Prevents text selection */
+  user-select: none;
+  /* Prevents text selection */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -32,9 +35,11 @@ body {
 
   overflow: hidden;
 }
+
 .hero-text h1 span {
   color: #006600;
 }
+
 /* Hero section styles */
 .hero-Sub-Section {
   width: 100%;
@@ -46,7 +51,8 @@ body {
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-fit: cover;
+  /* Ensures the image covers the section without distortion */
   position: absolute;
   top: 0;
   left: 0;
@@ -65,6 +71,7 @@ body {
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
+
 .hero-text h1 {
   margin-top: 5%;
 }
@@ -83,7 +90,7 @@ nav {
   position: fixed;
 
   z-index: 1000;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -96,6 +103,7 @@ flex-wrap: wrap;
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -154,6 +162,7 @@ button {
   height: auto;
   transition-duration: 0.3s;
 }
+
 .hero-text button {
   margin-top: 2%;
 }
@@ -191,24 +200,29 @@ button:hover {
   margin-left: 15vw;
   margin-top: 12vw;
 }
+
 .mid-section-text-left h2 {
   font-family: Merriweather;
   font-size: 2vw;
 }
+
 .mid-section-text-left p {
   margin-top: 2%;
   font-family: Poppins;
   font-size: 17px;
   text-align: justify;
 }
-.mid-section-left {
-display: flex;
 
-    flex-wrap: wrap;
+.mid-section-left {
+  display: flex;
+
+  flex-wrap: wrap;
 }
+
 .pakistani-culture {
   color: #006600;
 }
+
 .mid-section-left img {
   width: 100%;
   height: auto;
@@ -240,19 +254,24 @@ display: flex;
 }
 
 @keyframes slide {
+
   0%,
   15% {
     margin-left: 0px;
   }
+
   35% {
     margin-left: calc(-728px * 1);
   }
+
   55% {
     margin-left: calc(-728px * 2);
   }
+
   75% {
     margin-left: calc(-728px * 3);
   }
+
   90% {
     margin-left: calc(-728px * 4);
   }
@@ -291,12 +310,14 @@ display: flex;
 .pakistani-culture {
   color: #006600;
 }
+
 .mid-section-right img {
   width: 100%;
   height: auto;
 
   transition-duration: 0.3s;
 }
+
 .mid-section-right img:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -309,15 +330,18 @@ display: flex;
   display: flex;
   overflow: hidden;
 }
+
 .mid-section-text-left-2 {
   margin-left: 10%;
   padding-top: 10%;
 }
+
 .mid-section-text-left-2 h2 {
   font-family: Merriweather;
   font-size: 4vh;
   margin-left: 5vh;
 }
+
 .mid-section-text-left-2 p {
   margin-top: 10px;
   font-family: Poppins;
@@ -329,6 +353,7 @@ display: flex;
 .pakistani-culture {
   color: #006600;
 }
+
 .mid-section-left-2 img {
   width: 100%;
   height: auto;
@@ -368,11 +393,13 @@ display: flex;
 .pakistani-culture {
   color: #006600;
 }
+
 .mid-section-right-2 img {
   width: 100%;
   height: auto;
   transition-duration: 0.3s;
 }
+
 .mid-section-right-2 img:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -390,6 +417,7 @@ display: flex;
   text-align: justify;
   font-weight: 400;
 }
+
 .cards-section h3 {
   padding-top: 5%;
   margin-top: 3%;
@@ -398,7 +426,7 @@ display: flex;
 
   font-family: Merriweather;
   font-size: 35px;
-  color: #ffffff;
+  color: #C2410C;
 }
 
 .card h4 {
@@ -408,21 +436,25 @@ display: flex;
   font-family: Poppins;
   font-size: 25px;
   color: #C2410C;
-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   border-bottom: 2px solid transparent;
 }
+
 .card h4:hover {
   border-bottom: 2px solid #C2410C;
 }
+
 .card .container p {
   margin-top: 5%;
   margin-bottom: 5%;
   font-family: Poppins;
   line-height: 1.6;
 }
+
 .container p {
   margin-bottom: 15%;
 }
+
 .card {
   overflow: hidden;
   transition: 0.3s;
@@ -431,9 +463,10 @@ transition-duration: 0.3s;
   border-radius: 5px;
   background-color: #ffffff;
 }
+
 .card:hover {
   background: #e2d8b8;
-  color: #1C1C1C ;
+  color: #1C1C1C;
   cursor: pointer;
   transform: scale(1.03);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.726);
@@ -446,11 +479,13 @@ transition-duration: 0.3s;
 .container {
   padding: 2px 16px;
 }
+
 .three-cards {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #slideshow-two {
   overflow: hidden;
   width: 100%;
@@ -460,12 +495,14 @@ transition-duration: 0.3s;
 
 .slide-wrapper-two {
   display: flex;
-  width: calc(400px * 10); /* Double width to hold duplicate slides */
+  width: calc(400px * 10);
+  /* Double width to hold duplicate slides */
   animation: slide-two 15s linear infinite;
 
   padding: 0.8% 0%;
   gap: 1%;
 }
+
 #slideshow-two:hover .slide-wrapper-two {
   animation-play-state: paused;
 }
@@ -478,6 +515,7 @@ transition-duration: 0.3s;
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-400px * 5));
   }
@@ -491,10 +529,12 @@ transition-duration: 0.3s;
   background-color: #d2d0a0;
   padding-bottom: 5%;
 }
+
 .cards-section-3 p {
   text-align: justify;
   font-weight: 400;
 }
+
 .cards-section-3 h3 {
   padding-top: 5%;
   margin-top: 3%;
@@ -515,15 +555,18 @@ transition-duration: 0.3s;
   align-items: baseline;
   border-bottom: 2px solid transparent;
 }
+
 .card-three h4:hover {
   border-bottom: 2px solid white;
 }
+
 .card-three .container-three p {
   margin-top: 5%;
   margin-bottom: 5%;
   font-family: Poppins;
   line-height: 1.6;
 }
+
 .card-three {
   overflow: hidden;
   transition: 0.3s;
@@ -531,6 +574,7 @@ transition-duration: 0.3s;
   border-radius: 5px;
   background-color: #ffffff;
 }
+
 .card-three:hover {
   background: #c2c093;
   color: #ffffff;
@@ -549,11 +593,13 @@ transition-duration: 0.3s;
 .container-three {
   padding: 2px 16px;
 }
+
 .three-cards {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #slideshow-three {
   overflow: hidden;
   width: 100%;
@@ -562,13 +608,15 @@ transition-duration: 0.3s;
 
 .slide-wrapper-three {
   display: flex;
-  width: calc(400px * 10); /* Double width to hold duplicate slides */
+  width: calc(400px * 10);
+  /* Double width to hold duplicate slides */
   animation: slide-two 15s linear infinite;
   padding-top: 0.8%;
   padding-bottom: 2%;
 
   gap: 1%;
 }
+
 #slideshow-three:hover .slide-wrapper-three {
   animation-play-state: paused;
 }
@@ -581,10 +629,12 @@ transition-duration: 0.3s;
   0% {
     transform: translateX(calc(-400px * 5));
   }
+
   100% {
     transform: translateX(0);
   }
 }
+
 /* ------------------------------------------------------------------------------footer-----------------------------------------------------------------------------*/
 /* Footer Base */
 
@@ -592,18 +642,24 @@ footer {
   background-color: #333b41;
   padding: 40px 5%;
   color: #d3d3d3;
+ flex-wrap: wrap;
   font-family: Poppins, sans-serif;
 }
 
 /* Footer Main Container */
 .main-fot-container {
   display: flex;
-  justify-content: space-between; /* Equal spacing */
-  align-items: flex-start; /* Align to the top */
-  gap: 5vw; /* Adjusts spacing between sections */
-  padding: 20px 5%; /* Adds some padding */
-  flex-wrap: nowrap;
-  margin-top: 5%; /* Prevents wrapping */
+  justify-content: space-between;
+  /* Equal spacing */
+  align-items: flex-start;
+  /* Align to the top */
+  gap: 5vw;
+  /* Adjusts spacing between sections */
+  padding: 20px 5%;
+  /* Adds some padding */
+  flex-wrap: wrap;
+  margin-top: 5%;
+  /* Prevents wrapping */
 }
 
 /* Logo Section */
@@ -611,10 +667,12 @@ footer {
   width: 30%;
   margin-top: 10px;
 }
+
 .first-fot-container .logo {
   width: 25vh;
   height: auto;
 }
+
 .footer-text-one {
   text-align: justify;
   font-size: 20px;
@@ -648,20 +706,24 @@ footer {
   gap: 10px;
   margin-bottom: 10px;
 }
+
 .first-fot-container,
 .second-fot-container,
 .third-fot-container {
-  width: 30%; /* Ensures equal width */
+  width: 30%;
+  /* Ensures equal width */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .second-fot-container {
   text-align: center;
   display: inline;
   justify-content: center;
   margin-top: 4%;
 }
+
 .third-fot-container {
   margin-top: 10%;
 }
@@ -722,15 +784,18 @@ footer {
 .third-fot-container ul li a:hover {
   color: #006600;
 }
+
 .third-fot-container a {
   position: relative;
   z-index: 10;
 }
+
 .LinkdIn {
   width: 100%;
   text-align: left;
   padding-top: 10px;
 }
+
 /* Footer Decorative Image */
 .footer-decor {
   width: 600px;
@@ -743,3 +808,4 @@ footer {
   position: relative;
   overflow: hidden;
 }
+
