@@ -33,7 +33,7 @@ body {
 
 /* Navbar styles */
 nav {
-    padding: 3px 10%;
+    padding: 0px 10%;
     background-color: rgba(0, 0, 0, 0.322);
     backdrop-filter: blur(15px);
     position: fixed;

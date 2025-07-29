@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate form data
     if (!empty($your_name) && !empty($email) && !empty($message)) {
         // Create connection
-        $conn = new mysqli("localhost:3306", "root", "", "contact us");
+        $conn = new mysqli(hostname: "localhost:3306", "root", "", "contact us");
 
         // Check connection
         if ($conn->connect_error) {
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div style='text-align: center; margin-top: 50px;'>
                     <h1>Message Sent Successfully!</h1>
                     <p>Thank you, $your_name. We will get back to you soon!</p>
-                    <a href='index.html'>Go Back</a>
+                    <a href='/index.html'>Go Back</a>
                 </div>
             </body>
             </html>
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div style='text-align: center; margin-top: 50px;'>
                     <h1>Error</h1>
                     <p>There was an issue submitting your message. Please try again later.</p>
-                    <a href='index.html'>Go Back</a>
+                    <a href='/index.html'>Go Back</a>
                 </div>
             </body>
             </html>
@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div style='text-align: center; margin-top: 50px;'>
                 <h1>Validation Error</h1>
                 <p>Please fill in all the required fields.</p>
-                <a href='index.html'>Go Back</a>
+                <a href='/index.html'>Go Back</a>
             </div>
         </body>
         </html>
